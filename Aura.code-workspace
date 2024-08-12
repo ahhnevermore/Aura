@@ -460,19 +460,6 @@
 		"version": "0.2.0",
 		"configurations": [
 			{
-				"args": [
-					"--extensionDevelopmentPath=${workspaceFolder}"
-				],
-				"name": "Launch Extension",
-				"outFiles": [
-					"${workspaceFolder}/out/**/*.js"
-				],
-				"preLaunchTask": "npm",
-				"request": "launch",
-				"type": "extensionHost"
-			},
-
-			{
 				"name": "Launch Aura (Debug)",
 				"request": "launch",
 				"program": "C:\\Users\\falken\\Documents\\Aura\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
