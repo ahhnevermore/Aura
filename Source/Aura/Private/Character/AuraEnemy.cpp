@@ -10,7 +10,7 @@
 
 void AAuraEnemy::BeginPlay()
     {
-        Super::BeginPlay()
+        Super::BeginPlay();
 
         AbilitySystemComponent->InitAbilityActorInfo(this,this);
         
@@ -21,7 +21,7 @@ AAuraEnemy::AAuraEnemy(){
 
     AbilitySystemComponent = CreateDefaultSubobject<UAuraAbilitySystemComponent>("AbilitySystemComponent");
     AbilitySystemComponent->SetIsReplicated(true);
-    AbilitySystemComponent->SetReplicationMode(EGameEffectReplicationMode::Minimal);
+    AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Minimal);
 
     AttributeSet = CreateDefaultSubobject<UAuraAttributeSet>("AttributeSet");
 
